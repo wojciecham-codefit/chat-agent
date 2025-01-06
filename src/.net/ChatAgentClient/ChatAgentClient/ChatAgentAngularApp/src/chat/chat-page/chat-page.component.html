@@ -1,0 +1,41 @@
+<div class="h-100 d-flex flex-column">
+  <header class="p-4">
+    <h2 class="w-100 text-center">Chat pomocy</h2>
+  </header>
+  <div #chatContainer class="flex-1 message-container overflow-y-auto">
+    @for (message of chatMessages(); track message.timestamp) {
+      <mat-card appearance="outlined" class="message my-1" [class.agent]="message.isAgentResponse" [class.customer]="!message.isAgentResponse">
+        <mat-card-title class="title p-1">
+          @if (message.isAgentResponse) {
+            <span>Support</span>
+          } @else {
+            <span>Ty</span>
+          }
+        </mat-card-title>
+        <mat-card-content>{{ message.content }}</mat-card-content>
+      </mat-card>
+    }
+
+    @if (isLoading() && !disableChat() && !finish()) {
+      <mat-card appearance="outlined" class="message my-1" [class.agent]="true">
+        <mat-card-title class="title p-1">
+          <span>Support</span>
+        </mat-card-title>
+        <mat-card-content>
+          <mat-progress-bar mode="buffer" class="progress"></mat-progress-bar>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+  <div class="d-flex flex-column">
+    <form class="w-100">
+      <mat-form-field class="w-100">
+        <mat-label>Napisz tutaj swoją wiadomość</mat-label>
+        <textarea [disabled]="isLoading() || disableChat()" name="szmata" [(ngModel)]="message" (keydown)="sendMessage($event)" matInput placeholder="Mam problem z..."></textarea>
+      </mat-form-field>
+    </form>
+    <div class="d-flex flex-row">
+      <button mat-fab extended (click)="restart()">Nowa konwersacja</button>
+    </div>
+  </div>
+</div>

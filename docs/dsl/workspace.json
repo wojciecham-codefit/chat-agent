@@ -1,0 +1,628 @@
+{
+  "configuration" : {
+    "scope" : "SoftwareSystem"
+  },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2025-01-05T22:41:45Z",
+  "model" : {
+    "deploymentNodes" : [ {
+      "children" : [ {
+        "containerInstances" : [ {
+          "containerId" : "3",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Live",
+          "id" : "28",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.2064f86e-6f29-4384-a102-18b5428121c3.webappinstance"
+          },
+          "relationships" : [ {
+            "description" : "Wykonuje żądania HTTP",
+            "destinationId" : "30",
+            "id" : "31",
+            "linkedRelationshipId" : "14",
+            "sourceId" : "28",
+            "technology" : "HTTP"
+          } ],
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Live",
+        "id" : "27",
+        "instances" : "1",
+        "name" : "Docker Container 1",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.2064f86e-6f29-4384-a102-18b5428121c3"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "4",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Live",
+          "id" : "30",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.905b8da4-f07b-489c-bcf5-6a95d5a1c6a8.webapiinstance"
+          },
+          "relationships" : [ {
+            "description" : "Zapis/odczyt wektorów dokumentów",
+            "destinationId" : "33",
+            "id" : "34",
+            "linkedRelationshipId" : "17",
+            "sourceId" : "30",
+            "technology" : "TCP"
+          }, {
+            "description" : "Zapis/odczyt danych z db",
+            "destinationId" : "36",
+            "id" : "37",
+            "linkedRelationshipId" : "25",
+            "sourceId" : "30",
+            "technology" : "TCP"
+          }, {
+            "description" : "Zapis/odczyt danych sesji",
+            "destinationId" : "40",
+            "id" : "41",
+            "linkedRelationshipId" : "22",
+            "sourceId" : "30",
+            "technology" : "TCP"
+          } ],
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Live",
+        "id" : "29",
+        "instances" : "1",
+        "name" : "Docker Container 2",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.905b8da4-f07b-489c-bcf5-6a95d5a1c6a8"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "7",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Live",
+          "id" : "33",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.0f2ef62d-7dcc-46c6-9387-62acf476976b.chromainstance"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Live",
+        "id" : "32",
+        "instances" : "1",
+        "name" : "Docker Container 3",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.0f2ef62d-7dcc-46c6-9387-62acf476976b"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "6",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Live",
+          "id" : "36",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.68151b41-7309-4a74-8b24-90d535f39203.chromainstance"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Live",
+        "id" : "35",
+        "instances" : "1",
+        "name" : "Docker Container 4",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4.68151b41-7309-4a74-8b24-90d535f39203"
+        },
+        "tags" : "Element,Deployment Node"
+      } ],
+      "environment" : "Live",
+      "id" : "26",
+      "instances" : "1",
+      "name" : "Azure Linux Server",
+      "properties" : {
+        "structurizr.dsl.identifier" : "live.920f10ef-5ef6-4e2d-8b17-809e177bd6e4"
+      },
+      "tags" : "Element,Deployment Node"
+    }, {
+      "children" : [ {
+        "containerInstances" : [ {
+          "containerId" : "5",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Live",
+          "id" : "40",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "live.3a30e585-2904-423a-848e-08069801437f.4f02eb8b-714b-4cc0-bc20-23dd72219583.databaseinstance"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Live",
+        "id" : "39",
+        "instances" : "1",
+        "name" : "redis cache",
+        "properties" : {
+          "structurizr.dsl.identifier" : "live.3a30e585-2904-423a-848e-08069801437f.4f02eb8b-714b-4cc0-bc20-23dd72219583"
+        },
+        "tags" : "Element,Deployment Node"
+      } ],
+      "environment" : "Live",
+      "id" : "38",
+      "instances" : "1",
+      "name" : "Azure Cloud",
+      "properties" : {
+        "structurizr.dsl.identifier" : "live.3a30e585-2904-423a-848e-08069801437f"
+      },
+      "tags" : "Element,Deployment Node"
+    } ],
+    "people" : [ {
+      "description" : "Klient sklepu firmy Qpik.",
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "User",
+      "properties" : {
+        "structurizr.dsl.identifier" : "user"
+      },
+      "relationships" : [ {
+        "description" : "Używa przez przeglądarkę",
+        "destinationId" : "3",
+        "id" : "12",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Używa przez przeglądarkę",
+        "destinationId" : "2",
+        "id" : "13",
+        "linkedRelationshipId" : "12",
+        "sourceId" : "1"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "description" : "Interfejs do komunikacji z agentem.",
+        "documentation" : { },
+        "id" : "3",
+        "name" : "Web Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "supportagentsystem.webappcontainer"
+        },
+        "relationships" : [ {
+          "description" : "Wykonuje żądania HTTP",
+          "destinationId" : "4",
+          "id" : "14",
+          "sourceId" : "3",
+          "tags" : "Relationship",
+          "technology" : "HTTP"
+        } ],
+        "tags" : "Element,Container,WebApp",
+        "technology" : "ASP .NET Core, Angular"
+      }, {
+        "description" : "Logika agenta, komunikacja z OpenAI.",
+        "documentation" : { },
+        "id" : "4",
+        "name" : "Web API",
+        "properties" : {
+          "structurizr.dsl.identifier" : "supportagentsystem.agentcontainer"
+        },
+        "relationships" : [ {
+          "description" : "Wykonuje żądania HTTP",
+          "destinationId" : "8",
+          "id" : "15",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "HTTP"
+        }, {
+          "description" : "Zapis/odczyt wektorów dokumentów",
+          "destinationId" : "7",
+          "id" : "17",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "TCP"
+        }, {
+          "description" : "Wykonuje żądania HTTP",
+          "destinationId" : "10",
+          "id" : "18",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "HTTP"
+        }, {
+          "description" : "Wykonuje żądania HTTP",
+          "destinationId" : "11",
+          "id" : "20",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "HTTP"
+        }, {
+          "description" : "Zapis/odczyt danych sesji",
+          "destinationId" : "5",
+          "id" : "22",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "TCP"
+        }, {
+          "description" : "Zapis/odczyt danych z db",
+          "destinationId" : "9",
+          "id" : "23",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "TCP"
+        }, {
+          "description" : "Zapis/odczyt danych z db",
+          "destinationId" : "6",
+          "id" : "25",
+          "sourceId" : "4",
+          "tags" : "Relationship",
+          "technology" : "TCP"
+        } ],
+        "tags" : "Element,Container,WebAPI",
+        "technology" : "python, uvicorn"
+      }, {
+        "description" : "Zapisywanie sesji użytkownika z agentem.",
+        "documentation" : { },
+        "id" : "5",
+        "name" : "Memory Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "supportagentsystem.dbcontainer"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "Azure redis cache"
+      }, {
+        "description" : "Statystyki użycia agenta.",
+        "documentation" : { },
+        "id" : "6",
+        "name" : "Statistics Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "supportagentsystem.statscontainer"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "PostgreSQL"
+      }, {
+        "description" : "Zapisanie embeddingów dokumentów.",
+        "documentation" : { },
+        "id" : "7",
+        "name" : "Vector Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "supportagentsystem.vectorcontainer"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "Chroma DB"
+      } ],
+      "description" : "Zarządzania zapytaniami od klientami.",
+      "documentation" : { },
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "System supportowy",
+      "properties" : {
+        "structurizr.dsl.identifier" : "supportagentsystem"
+      },
+      "relationships" : [ {
+        "description" : "Wykonuje żądania HTTP",
+        "destinationId" : "8",
+        "id" : "16",
+        "linkedRelationshipId" : "15",
+        "sourceId" : "2",
+        "technology" : "HTTP"
+      }, {
+        "description" : "Wykonuje żądania HTTP",
+        "destinationId" : "10",
+        "id" : "19",
+        "linkedRelationshipId" : "18",
+        "sourceId" : "2",
+        "technology" : "HTTP"
+      }, {
+        "description" : "Wykonuje żądania HTTP",
+        "destinationId" : "11",
+        "id" : "21",
+        "linkedRelationshipId" : "20",
+        "sourceId" : "2",
+        "technology" : "HTTP"
+      }, {
+        "description" : "Zapis/odczyt danych z db",
+        "destinationId" : "9",
+        "id" : "24",
+        "linkedRelationshipId" : "23",
+        "sourceId" : "2",
+        "technology" : "TCP"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "LLM do komunikacji z użytkownikiem.",
+      "documentation" : { },
+      "id" : "8",
+      "location" : "Unspecified",
+      "name" : "OpenAI System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "openaisystem"
+      },
+      "tags" : "Element,Software System,External,AI"
+    }, {
+      "description" : "Obecna infrastruktura sklepu internetowego (w tym db z produktami i użytkownikami).",
+      "documentation" : { },
+      "id" : "9",
+      "location" : "Unspecified",
+      "name" : "Qpik System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "qpiksystem"
+      },
+      "tags" : "Element,Software System,External,Database"
+    }, {
+      "description" : "API do wysyłania e-maili.",
+      "documentation" : { },
+      "id" : "10",
+      "location" : "Unspecified",
+      "name" : "SendGrid System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "sendgridsystem"
+      },
+      "tags" : "Element,Software System,External,Mail"
+    }, {
+      "description" : "Server z plikami/dokumentacją firmy Qpik.",
+      "documentation" : { },
+      "id" : "11",
+      "location" : "Unspecified",
+      "name" : "Qpik File Server",
+      "properties" : {
+        "structurizr.dsl.identifier" : "qpikfileserver"
+      },
+      "tags" : "Element,Software System,External,Folder"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJOYW1lIiAiRGVzY3JpcHRpb24iIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbW9kZWwgewoJCXVzZXIgPSBwZXJzb24gIlVzZXIiICJLbGllbnQgc2tsZXB1IGZpcm15IFFwaWsuIgoJCXN1cHBvcnRBZ2VudFN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJTeXN0ZW0gc3VwcG9ydG93eSIgIlphcnrEhWR6YW5pYSB6YXB5dGFuaWFtaSBvZCBrbGllbnRhbWkuIiB7CgkJCXdlYkFwcENvbnRhaW5lciA9IGNvbnRhaW5lciAiV2ViIEFwcGxpY2F0aW9uIiAiSW50ZXJmZWpzIGRvIGtvbXVuaWthY2ppIHogYWdlbnRlbS4iICJBU1AgLk5FVCBDb3JlLCBBbmd1bGFyIiAiV2ViQXBwIgoJCQlhZ2VudENvbnRhaW5lciA9IGNvbnRhaW5lciAiV2ViIEFQSSIgIkxvZ2lrYSBhZ2VudGEsIGtvbXVuaWthY2phIHogT3BlbkFJLiIgInB5dGhvbiwgdXZpY29ybiIgIldlYkFQSSIKCQkJZGJDb250YWluZXIgPSBjb250YWluZXIgIk1lbW9yeSBEYXRhYmFzZSIgIlphcGlzeXdhbmllIHNlc2ppIHXFvHl0a293bmlrYSB6IGFnZW50ZW0uIiAiQXp1cmUgcmVkaXMgY2FjaGUiICJEYXRhYmFzZSIKCQkJc3RhdHNDb250YWluZXIgPSBjb250YWluZXIgIlN0YXRpc3RpY3MgRGF0YWJhc2UiICJTdGF0eXN0eWtpIHXFvHljaWEgYWdlbnRhLiIgIlBvc3RncmVTUUwiICJEYXRhYmFzZSIKCQkJdmVjdG9yQ29udGFpbmVyID0gY29udGFpbmVyICJWZWN0b3IgRGF0YWJhc2UiICJaYXBpc2FuaWUgZW1iZWRkaW5nw7N3IGRva3VtZW50w7N3LiIgIkNocm9tYSBEQiIgIkRhdGFiYXNlIgoJCX0KCQkKCQlPcGVuQUlTeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiT3BlbkFJIFN5c3RlbSIgIkxMTSBkbyBrb211bmlrYWNqaSB6IHXFvHl0a293bmlraWVtLiIgIkV4dGVybmFsLCBBSSIKCQlxcGlrU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIlFwaWsgU3lzdGVtIiAiT2JlY25hIGluZnJhc3RydWt0dXJhIHNrbGVwdSBpbnRlcm5ldG93ZWdvICh3IHR5bSBkYiB6IHByb2R1a3RhbWkgaSB1xbx5dGtvd25pa2FtaSkuIiAiRXh0ZXJuYWwsIERhdGFiYXNlIgoJCXNlbmRHcmlkU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIlNlbmRHcmlkIFN5c3RlbSIgIkFQSSBkbyB3eXN5xYJhbmlhIGUtbWFpbGkuIiAiRXh0ZXJuYWwsIE1haWwiCgkJcXBpa0ZpbGVTZXJ2ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiUXBpayBGaWxlIFNlcnZlciIgIlNlcnZlciB6IHBsaWthbWkvZG9rdW1lbnRhY2rEhSBmaXJteSBRcGlrLiIgIkV4dGVybmFsLCBGb2xkZXIiCgkJCgkJdXNlciAtPiBzdXBwb3J0QWdlbnRTeXN0ZW0ud2ViQXBwQ29udGFpbmVyICJVxbx5d2EgcHJ6ZXogcHJ6ZWdsxIVkYXJrxJkiCgkJc3VwcG9ydEFnZW50U3lzdGVtLndlYkFwcENvbnRhaW5lciAtPiBzdXBwb3J0QWdlbnRTeXN0ZW0uYWdlbnRDb250YWluZXIgIld5a29udWplIMW8xIVkYW5pYSBIVFRQIiAiSFRUUCIKCQlzdXBwb3J0QWdlbnRTeXN0ZW0uYWdlbnRDb250YWluZXIgLT4gT3BlbkFJU3lzdGVtICJXeWtvbnVqZSDFvMSFZGFuaWEgSFRUUCIgIkhUVFAiCgkJc3VwcG9ydEFnZW50U3lzdGVtLmFnZW50Q29udGFpbmVyIC0+IHN1cHBvcnRBZ2VudFN5c3RlbS52ZWN0b3JDb250YWluZXIgIlphcGlzL29kY3p5dCB3ZWt0b3LDs3cgZG9rdW1lbnTDs3ciICJUQ1AiCgkJc3VwcG9ydEFnZW50U3lzdGVtLmFnZW50Q29udGFpbmVyIC0+IHNlbmRHcmlkU3lzdGVtICJXeWtvbnVqZSDFvMSFZGFuaWEgSFRUUCIgIkhUVFAiCgkJc3VwcG9ydEFnZW50U3lzdGVtLmFnZW50Q29udGFpbmVyIC0+IHFwaWtGaWxlU2VydmVyICJXeWtvbnVqZSDFvMSFZGFuaWEgSFRUUCIgIkhUVFAiCgkJc3VwcG9ydEFnZW50U3lzdGVtLmFnZW50Q29udGFpbmVyIC0+IHN1cHBvcnRBZ2VudFN5c3RlbS5kYkNvbnRhaW5lciAiWmFwaXMvb2Rjenl0IGRhbnljaCBzZXNqaSIgIlRDUCIKCQlzdXBwb3J0QWdlbnRTeXN0ZW0uYWdlbnRDb250YWluZXIgLT4gcXBpa1N5c3RlbSAiWmFwaXMvb2Rjenl0IGRhbnljaCB6IGRiIiAiVENQIgoJCXN1cHBvcnRBZ2VudFN5c3RlbS5hZ2VudENvbnRhaW5lciAtPiBzdXBwb3J0QWdlbnRTeXN0ZW0uc3RhdHNDb250YWluZXIgIlphcGlzL29kY3p5dCBkYW55Y2ggeiBkYiIgIlRDUCIKCQkKCQlsaXZlID0gZGVwbG95bWVudEVudmlyb25tZW50ICJMaXZlIiB7CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBenVyZSBMaW51eCBTZXJ2ZXIiIHsKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEb2NrZXIgQ29udGFpbmVyIDEiIHsKICAgICAgICAgICAgICAgICAgICB3ZWJBcHBJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHN1cHBvcnRBZ2VudFN5c3RlbS53ZWJBcHBDb250YWluZXIKICAgICAgICAgICAgICAgIH0KCQkJCQoJCQkJZGVwbG95bWVudE5vZGUgIkRvY2tlciBDb250YWluZXIgMiIgewogICAgICAgICAgICAgICAgICAgIHdlYkFwaUluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2Ugc3VwcG9ydEFnZW50U3lzdGVtLmFnZW50Q29udGFpbmVyCiAgICAgICAgICAgICAgICB9CgkJCQkKCQkJCWRlcGxveW1lbnROb2RlICJEb2NrZXIgQ29udGFpbmVyIDMiIHsKICAgICAgICAgICAgICAgICAgICBjaHJvbWFJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHN1cHBvcnRBZ2VudFN5c3RlbS52ZWN0b3JDb250YWluZXIKICAgICAgICAgICAgICAgIH0KCQkJCQoJCQkJZGVwbG95bWVudE5vZGUgIkRvY2tlciBDb250YWluZXIgNCIgewogICAgICAgICAgICAgICAgICAgIGNocm9tYUluc3RhbmNlID0gY29udGFpbmVySW5zdGFuY2Ugc3VwcG9ydEFnZW50U3lzdGVtLnN0YXRzQ29udGFpbmVyCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBenVyZSBDbG91ZCIgewogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgInJlZGlzIGNhY2hlIiB7CiAgICAgICAgICAgICAgICAgICAgZGF0YWJhc2VJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHN1cHBvcnRBZ2VudFN5c3RlbS5kYkNvbnRhaW5lcgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1Db250ZXh0IHN1cHBvcnRBZ2VudFN5c3RlbSAiQ29udGV4dCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CiAgICAKICAgICAgICBjb250YWluZXIgc3VwcG9ydEFnZW50U3lzdGVtICJDb250YWluZXIiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGRlcGxveW1lbnQgc3VwcG9ydEFnZW50U3lzdGVtICJMaXZlIiAiT25QcmVtaXNlRGVwbG95bWVudCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KICAgICAgICAKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJFbGVtZW50IiB7CiAgICAgICAgICAgICAgICBmb250U2l6ZSAzMAogICAgICAgICAgICB9CgkJCQoJCQlyZWxhdGlvbnNoaXAgIlJlbGF0aW9uc2hpcCIgewogICAgICAgICAgICAgICAgY29sb3IgIzAwMDAwMAoJCQkJZm9udFNpemUgMzAKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzExNjhiZAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBlbGVtZW50ICJDb250YWluZXIiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzExNjhiZAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHBlcnNvbgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMDg0MjdiCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGVsZW1lbnQgIkV4dGVybmFsIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM5OTk5OTkKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQoJCQkKCQkJZWxlbWVudCAiRm9sZGVyIiB7CgkJCQlzaGFwZSBGb2xkZXIKCQkJfQoJCQkKCQkJZWxlbWVudCAiTWFpbCIgewoJCQkJc2hhcGUgUm91bmRlZEJveAoJCQl9CgkJCQoJCQllbGVtZW50ICJBSSIgewoJCQkJc2hhcGUgUm9ib3QKCQkJfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGVsZW1lbnQgIldlYkFwcCIgewogICAgICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIGNvbmZpZ3VyYXRpb24gewogICAgICAgIHNjb3BlIHNvZnR3YXJlc3lzdGVtCiAgICB9Cgp9"
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Context",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "fontSize" : 30,
+          "tag" : "Element"
+        }, {
+          "background" : "#1168bd",
+          "color" : "#ffffff",
+          "tag" : "Software System"
+        }, {
+          "background" : "#1168bd",
+          "color" : "#ffffff",
+          "tag" : "Container"
+        }, {
+          "background" : "#08427b",
+          "color" : "#ffffff",
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "background" : "#999999",
+          "color" : "#ffffff",
+          "tag" : "External"
+        }, {
+          "shape" : "Folder",
+          "tag" : "Folder"
+        }, {
+          "shape" : "RoundedBox",
+          "tag" : "Mail"
+        }, {
+          "shape" : "Robot",
+          "tag" : "AI"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        }, {
+          "shape" : "WebBrowser",
+          "tag" : "WebApp"
+        } ],
+        "relationships" : [ {
+          "color" : "#000000",
+          "fontSize" : 30,
+          "tag" : "Relationship"
+        } ]
+      },
+      "terminology" : { }
+    },
+    "containerViews" : [ {
+      "dimensions" : {
+        "height" : 1946,
+        "width" : 2495
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 355,
+        "y" : 20
+      }, {
+        "id" : "3",
+        "x" : 50,
+        "y" : 610
+      }, {
+        "id" : "4",
+        "x" : 770,
+        "y" : 610
+      }, {
+        "id" : "5",
+        "x" : 65,
+        "y" : 975
+      }, {
+        "id" : "6",
+        "x" : 775,
+        "y" : 1315
+      }, {
+        "id" : "7",
+        "x" : 260,
+        "y" : 1310
+      }, {
+        "id" : "8",
+        "x" : 1785,
+        "y" : 430
+      }, {
+        "id" : "9",
+        "x" : 1655,
+        "y" : 55
+      }, {
+        "id" : "10",
+        "x" : 1680,
+        "y" : 940
+      }, {
+        "id" : "11",
+        "x" : 1570,
+        "y" : 1370
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "Container",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "12"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "25"
+      } ],
+      "softwareSystemId" : "2"
+    } ],
+    "deploymentViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 2308,
+        "width" : 2476
+      },
+      "elements" : [ {
+        "id" : "26",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "27",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "28",
+        "x" : 239,
+        "y" : 817
+      }, {
+        "id" : "29",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "30",
+        "x" : 989,
+        "y" : 817
+      }, {
+        "id" : "32",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "33",
+        "x" : 1785,
+        "y" : 817
+      }, {
+        "id" : "35",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "36",
+        "x" : 1785,
+        "y" : 205
+      }, {
+        "id" : "38",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "39",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "40",
+        "x" : 1785,
+        "y" : 1567
+      } ],
+      "environment" : "Live",
+      "key" : "OnPremiseDeployment",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "31"
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "37",
+        "vertices" : [ {
+          "x" : 1576,
+          "y" : 638
+        } ]
+      }, {
+        "id" : "41"
+      } ],
+      "softwareSystemId" : "2"
+    } ],
+    "systemContextViews" : [ {
+      "dimensions" : {
+        "height" : 1748,
+        "width" : 2480
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 85,
+        "y" : 40
+      }, {
+        "id" : "2",
+        "x" : 740,
+        "y" : 580
+      }, {
+        "id" : "8",
+        "x" : 365,
+        "y" : 1220
+      }, {
+        "id" : "9",
+        "x" : 1630,
+        "y" : 1175
+      }, {
+        "id" : "10",
+        "x" : 1665,
+        "y" : 580
+      }, {
+        "id" : "11",
+        "x" : 1670,
+        "y" : 95
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "Context",
+      "order" : 1,
+      "paperSize" : "A5_Landscape",
+      "relationships" : [ {
+        "id" : "13"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "19"
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "24"
+      } ],
+      "softwareSystemId" : "2"
+    } ]
+  }
+}

@@ -1,0 +1,38 @@
+.message-container {
+  clear: both;
+
+  .progress {
+    width: 50px;
+    height: 20px;
+  }
+
+  .message {
+    clear: both;
+
+    &.agent {
+      .title {
+        text-transform: capitalize;
+        font-size: 0.85rem;
+        color: #122c80;
+        font-weight: bold;
+      }
+
+      background: #5ca7b8;
+      color: white;
+      float: left;
+    }
+
+    &.customer {
+      .title {
+        text-transform: capitalize;
+        font-size: 0.85rem;
+        color: cadetblue;
+        font-weight: bold;
+      }
+
+      background: #93d57e;
+      color: white;
+      float: right;
+    }
+  }
+}

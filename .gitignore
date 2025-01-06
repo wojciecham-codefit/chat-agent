@@ -1,1 +1,5 @@
 ﻿src/support-agent/.idea
+src/.net/ChatAgentClient/.idea
+src/.net/ChatAgentClient/ChatAgentClient/ChatAgentAngularApp/.vscode
+src/.net/ChatAgentClient/ChatAgentClient/obj
+__pycache__

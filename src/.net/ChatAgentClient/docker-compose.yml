@@ -1,0 +1,6 @@
+﻿services:
+  chatagentclient:
+    image: chatagentclient
+    build:
+      context: .
+      dockerfile: ChatAgentClient/Dockerfile
