@@ -1,8 +1,11 @@
-﻿from fastapi import FastAPI
+﻿import os
+
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .router import app_router
 
+ORIGIN = os.getenv("APP_ORIGIN", "http://localhost:4200")
 
 def create_app() -> FastAPI:
     fastapi_app = FastAPI()
@@ -16,6 +19,5 @@ def create_app() -> FastAPI:
     )
 
     return fastapi_app
-
 
 app = create_app()

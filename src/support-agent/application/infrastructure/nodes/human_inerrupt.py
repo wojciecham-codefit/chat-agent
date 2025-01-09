@@ -5,6 +5,7 @@ from application.features.chat_state import ChatState
 
 
 def human_interrupt(state: ChatState) -> ChatState:
+    print("HUMAN_NODE")
     human_message = interrupt(state["messages"][-1])
 
     return {

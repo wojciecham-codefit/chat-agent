@@ -12,10 +12,14 @@ SHOULD_CONTINUE_NODE = "should_continue"
 FINISH_MESSAGE = "KONIEC"
 
 def should_continue(state: ChatState) -> str:
+    print(SHOULD_CONTINUE_NODE)
+
     if FINISH_MESSAGE in state["messages"][-1].content:
         return END_NODE
     else:
-        if state["category"] is RequestCategory.COMPLAINT:
+        print(f'Category: {state["category"]}')
+
+        if state["category"] == RequestCategory.COMPLAINT:
             return COMPLAINT_HUMAN
         else:
             return OTHER_HUMAN

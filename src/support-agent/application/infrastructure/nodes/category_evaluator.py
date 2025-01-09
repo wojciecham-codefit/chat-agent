@@ -1,5 +1,5 @@
 ﻿from application.features.chat_state import ChatState
-from application.infrastructure.association_agent import AssociationAgent
+from application.infrastructure.agents.association_agent import AssociationAgent
 from domain.request_category import RequestCategory
 
 CATEGORY_EVALUATOR = "category_evaluator"
